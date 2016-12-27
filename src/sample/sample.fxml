@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="404.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints maxWidth="420.0" minWidth="416.0" prefWidth="420.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="4.0" minWidth="0.0" prefWidth="0.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <DialogPane />
+      <Button fx:id="gokuButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#action1" onMouseEntered="#action4" prefHeight="78.0" prefWidth="229.0" text="GOKU cursor" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="100.0" top="100.0" />
+         </GridPane.margin>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#action2" prefHeight="85.0" prefWidth="229.0" text="CELLO cursor" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="100.0" top="200.0" />
+         </GridPane.margin>
+      </Button>
+      <Label text="CHOOSE A MOUSE CURSOR:" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <GridPane.margin>
+            <Insets top="10.0" />
+         </GridPane.margin></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" text="    Warning: this action will automatically restart your computer!!!" textFill="#a83e17" wrapText="true" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="20.0" top="50.0" />
+         </GridPane.margin></Label>
+      <Button mnemonicParsing="false" onAction="#action3" prefHeight="83.0" prefWidth="230.0" text="WOW cursor" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="100.0" top="300.0" />
+         </GridPane.margin>
+      </Button>
+      <ImageView fitHeight="76.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" GridPane.valignment="TOP">
+         <image>
+            <Image url="http://www.rw-designer.com/cursor-view/54747-48.gif" />
+         </image>
+         <GridPane.margin>
+            <Insets left="110.0" top="100.0" />
+         </GridPane.margin>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" GridPane.valignment="TOP">
+         <image>
+            <Image url="http://cursors2.totallyfreecursors.com/thumbnails/cello.gif" />
+         </image>
+         <GridPane.margin>
+            <Insets left="120.0" top="220.0" />
+         </GridPane.margin>
+      </ImageView>
+      <ImageView fitHeight="109.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets left="95.0" top="290.0" />
+         </GridPane.margin>
+         <image>
+            <Image url="http://cur.cursors-4u.net/cursors/images10/cur920.gif" />
+         </image>
+      </ImageView>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</GridPane>
